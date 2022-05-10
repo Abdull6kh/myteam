@@ -1,0 +1,121 @@
+.intro {
+    position: relative;
+    background-color: $header-intro-bgc;
+    padding-bottom: 255px;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: calc(50% - 770px);
+        display: block;
+        width: 100px;
+        height: 200px;
+        background-image: url("../../images/bgi1.svg");
+        background-repeat: no-repeat;
+        background-size: 100px 200px;
+        content: '';
+    }
+    &::after {
+        position: absolute;
+        bottom: 0;
+        right: calc(50% - 550px);
+        display: block;
+        width: 358px;
+        height: 100px;
+        background-image: url("../../images/bgi2.svg");
+        background-repeat: no-repeat;
+        background-size: 358px 100px;
+        content: '';
+    }
+}
+.intro__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.intro__left {
+    width: 100%;
+    max-width: 635px;
+}
+.intro__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    color: #FFFFFF;
+}
+.red-text {
+    color: $second-text-color;
+}
+.intro__right {
+    width: 100%;
+    max-width: 445px;
+}
+.intro__line {
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    margin-bottom: 79px;
+    background-color: #79C8C7;
+}
+.intro__text {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+@media only screen and (max-width:768px) {
+    .intro {
+        &::before {
+            content: none;
+        }
+        &::after {
+            position: absolute;
+            bottom: 0;
+            right: calc(50% - 180px);
+            display: block;
+            width: 358px;
+            height: 100px;
+            background-image: url("../../images/bgi2.svg");
+            background-repeat: no-repeat;
+            background-size: 358px 100px;
+            content: '';
+        }
+    }
+    .intro__inner {
+        flex-direction: column;
+    }
+    .intro__left {
+        max-width: 100%;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    .intro__title {
+        font-size: 64px;
+        line-height: 56px;
+    }
+    .intro__right {
+        max-width: 457px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .intro__line {
+        display: none;
+    }
+    .intro__text {
+        font-size: 15px;
+        line-height: 28px;
+    }
+}
+@media only screen and (max-width:576px) {
+    .intro {
+        padding-bottom: 197px;
+    }
+    .intro__left {
+        margin-bottom: 18px;
+    }
+    .intro__title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}

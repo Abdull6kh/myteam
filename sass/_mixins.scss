@@ -1,0 +1,7 @@
+@mixin list-global {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
