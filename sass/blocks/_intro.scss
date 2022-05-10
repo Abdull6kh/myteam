@@ -1,7 +1,8 @@
 .intro {
     position: relative;
+    height: 100%;
     background-color: $header-intro-bgc;
-    padding-bottom: 250px;
+    padding-bottom: 255px;
 
     &::before {
         position: absolute;
