@@ -22,10 +22,6 @@
     background-color: transparent;
     border: none;
 }
-.clicked {
-    display: block;
-    transition: all 0.5s ease;
-}
 .menu {
     display: flex;
     align-items: center;
@@ -35,15 +31,19 @@
 .menu__list {
     @include list-global;
 }
-.menu__item + .menu__item {
+.menu__item:nth-child(2) {
     margin-left: 40px;
 }
+// .contact-item {
+//     // margin-left: auto; USTOZ NMAGADIR MANDA BAG BOP QOLDI AUTO BERSAM IWLAMADI WUNICUN SONDA BERP KETAMAN
+//     margin-left: 580px;
+// }
 .menu__link {
     display: inline-block;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: $main-text-color;
     text-decoration: none;
 
     &:hover {
@@ -52,27 +52,26 @@
 }
 .contact-link {
     display: block;
-    width: 100%;
-    max-width: 153px;
+    width: 153px;
     margin-left: auto;
     padding: 6px 0 8px;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: $main-text-color;
     text-align: center;
-    border: 2px solid #FFFFFF;
+    border: 2px solid $main-text-color;
     border-radius: 24px;
     text-decoration: none;
     transition: all 0.5s ease;
 
     &:hover {
         color: #002529;
-        background-color: #fff;
+        background-color: $main-text-color;
     }
 }
 
-@media only screen and (max-width:768px) {
+@include max-width(768px) {
     .header {
         padding: 64px 0 112px;
     }
@@ -102,28 +101,39 @@
     }
     .menu--open {
         position: absolute;
-        top: 70px;
-        right: 30px;    
+        top: 75px;
+        right: 0;    
         z-index: 2;
         display: flex;
         justify-content: center;
-        width: 153px;
+        max-width: 50%;
+        width: 100%;
+        height: 100vh;
+        background-color: #012F34;
     }
     .menu__list {
+        position: absolute;
+        top: 10px;
+        width: 100%;
         flex-direction: column;
     }
     .menu__item + .menu__item {
         margin-left: 0;
         margin-top: 40px;
     }
+    // .contact-item {
+    //     margin-left: 0;
+    //     margin-top: 40px;
+    // }
     .contact-link {
         display: none;
     }
     .contact--open {
         position: absolute;
-        top: 220px;
-        right: 30px;
+        top: 210px;
+        right: 20px;    
         z-index: 2;
         display: block;
+        background-color: #012F34;
     }
 }
