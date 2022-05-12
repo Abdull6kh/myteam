@@ -27,13 +27,18 @@
     display: flex;
     align-items: center;
     margin-left: 80px;
+    flex-grow: 1;
     transition: all 0.5s ease;
 }
 .menu__list {
     @include list-global;
+    flex-grow: 1;
 }
 .menu__item:nth-child(2) {
     margin-left: 40px;
+}
+.contact-item {
+    margin-left: auto;
 }
 .menu__link {
     display: inline-block;
@@ -50,7 +55,6 @@
 .contact-link {
     display: block;
     width: 153px;
-    margin-left: auto;
     padding: 6px 0 8px;
     font-weight: 600;
     font-size: 18px;
@@ -67,7 +71,11 @@
         background-color: $main-text-color;
     }
 }
-
+@media only screen and (max-width:978px) {
+    .header{
+        padding: 70px 0 100px;
+    }
+}
 @include max-width(768px) {
     .header {
         padding: 64px 0 112px;
@@ -98,35 +106,45 @@
     }
     .menu--open {
         position: absolute;
-        top: 75px;
+        top: 0;
         right: 0;    
         z-index: 2;
         display: flex;
-        justify-content: center;
-        max-width: 50%;
+        flex-direction: flex;
+        max-width: 68%;
         width: 100%;
         height: 100vh;
-        background-color: #012F34;
+        background-color: #2C6269;
     }
     .menu__list {
         position: absolute;
-        top: 10px;
+        top: 112px;
+        left: 40px;
         width: 100%;
         flex-direction: column;
+        align-items: flex-start;
     }
     .menu__item + .menu__item {
         margin-left: 0;
         margin-top: 40px;
     }
     .contact-link {
-        display: none;
+        // display: none;
     }
-    .contact--open {
-        position: absolute;
-        top: 210px;
-        right: 20px;    
-        z-index: 2;
+    .contact-item {
         display: block;
-        background-color: #012F34;
+        margin-top: 40px;
+        margin-right: auto;
+        margin-left: 0;
     }
+    // .contact--open {
+    //     position: absolute;
+    //     top: 135px;
+    //     right: 20px;    
+    //     z-index: 2;
+    //     display: block;
+    //     width: 153px;
+    //     margin: 0 auto;
+    //     background-color: #012F34;
+    // }
 }
