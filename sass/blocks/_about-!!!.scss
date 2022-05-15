@@ -93,7 +93,7 @@
 .card--open5 {
     background-color: $footer-bgc;
 }
-.card--open6 {
+.card-open6 {
     background-color: $footer-bgc;
 }
 .button2 {
@@ -274,7 +274,7 @@
         content: '';
     }
 }
-.button--open6 {
+.button-open6 {
     &::before {
         position: absolute;
         bottom: -28px;
@@ -291,9 +291,6 @@
         content: '';
     }
 }
-// .button2,.button3,.button4,.button5,.button6:hover.button2::before,.button3::before,.button4::before,.button5::before,.button6::before {
-//     background-color: $rapture-blue;
-// }
 @media only screen and (max-width:1150px) {
     .card2, .card3, .card4, .card5, .card6 {
         max-width: 280px;

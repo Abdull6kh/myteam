@@ -39,6 +39,6 @@ elBtn5.addEventListener('click', function() {
     elCard5.classList.toggle("card--open5")
 })
 elBtn6.addEventListener('click', function() {
-    elBtn6.classList.toggle("button--open6")
-    elCard6.classList.toggle("card--open6")
+    elBtn6.classList.toggle("button-open6")
+    elCard6.classList.toggle("card-open6")
 })
