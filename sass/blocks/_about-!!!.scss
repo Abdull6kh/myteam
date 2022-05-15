@@ -1,0 +1,334 @@
+.card2 {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    margin-bottom: 76px;
+    padding: 32px 0 56px;
+    background-color: $manage-bgc;
+    &:hover {
+        background-color: $footer-bgc;
+    }
+}
+.card3 {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0 56px;
+    background-color: $manage-bgc;
+    &:hover {
+        background-color: $footer-bgc;
+    }
+}
+.card3 {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 76px;
+    padding: 32px 0 56px;
+    background-color: $manage-bgc;
+    &:hover {
+        background-color: $footer-bgc;
+    }
+}
+.card4 {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    padding: 32px 0 56px;
+    background-color: $manage-bgc;
+    &:hover {
+        background-color: $footer-bgc;
+    }
+}
+.card5 {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    padding: 32px 0 56px;
+    background-color: $manage-bgc;
+    &:hover {
+        background-color: $footer-bgc;
+    }
+}
+.card6 {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0 56px;
+    background-color: $manage-bgc;
+}
+.card--open {
+    background-color: $footer-bgc;
+}
+.card--open2 {
+    background-color: $footer-bgc;
+}
+.card--open3 {
+    background-color: $footer-bgc;
+}
+.card--open4 {
+    background-color: $footer-bgc;
+}
+.card--open5 {
+    background-color: $footer-bgc;
+}
+.card--open6 {
+    background-color: $footer-bgc;
+}
+.button2 {
+    padding: 0;
+    border: none;
+    &::before {
+        position: absolute;
+        bottom: -28px;
+        left: calc(50% - 28px);
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: $second-text-color;
+        background-image: url("../images/plus.svg");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: center center;
+        content: '';
+    }
+    &:hover&::before {
+        background-color: $rapture-blue;
+    }
+}
+.button3 {
+    padding: 0;
+    border: none;
+    &::before {
+        position: absolute;
+        bottom: -28px;
+        left: calc(50% - 28px);
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: $second-text-color;
+        background-image: url("../images/plus.svg");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: center center;
+        content: '';
+    }
+    &:hover&::before {
+        background-color: $rapture-blue;
+    }
+}
+.button4 {
+    padding: 0;
+    border: none;
+    &::before {
+        position: absolute;
+        bottom: -28px;
+        left: calc(50% - 28px);
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: $second-text-color;
+        background-image: url("../images/plus.svg");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: center center;
+        content: '';
+    }
+    &:hover&::before {
+        background-color: $rapture-blue;
+    }
+}
+.button5 {
+    padding: 0;
+    border: none;
+    &::before {
+        position: absolute;
+        bottom: -28px;
+        left: calc(50% - 28px);
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: $second-text-color;
+        background-image: url("../images/plus.svg");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: center center;
+        content: '';
+    }
+    &:hover&::before {
+        background-color: $rapture-blue;
+    }
+}
+.button6 {
+    padding: 0;
+    border: none;
+    &::before {
+        position: absolute;
+        bottom: -28px;
+        left: calc(50% - 28px);
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: $second-text-color;
+        background-image: url("../images/plus.svg");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: center center;
+        content: '';
+    }
+    &:hover&::before {
+        background-color: $rapture-blue;
+    }
+}
+.button--open2 {
+    &::before {
+        position: absolute;
+        bottom: -28px;
+        left: calc(50% - 28px);
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: $rapture-blue;
+        background-image: url("../images/minus.svg");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: center center;
+        content: '';
+    }
+}
+.button--open3 {
+    &::before {
+        position: absolute;
+        bottom: -28px;
+        left: calc(50% - 28px);
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: $rapture-blue;
+        background-image: url("../images/minus.svg");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: center center;
+        content: '';
+    }
+}
+.button--open4 {
+    &::before {
+        position: absolute;
+        bottom: -28px;
+        left: calc(50% - 28px);
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: $rapture-blue;
+        background-image: url("../images/minus.svg");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: center center;
+        content: '';
+    }
+}
+.button--open5 {
+    &::before {
+        position: absolute;
+        bottom: -28px;
+        left: calc(50% - 28px);
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: $rapture-blue;
+        background-image: url("../images/minus.svg");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: center center;
+        content: '';
+    }
+}
+.button--open6 {
+    &::before {
+        position: absolute;
+        bottom: -28px;
+        left: calc(50% - 28px);
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: $rapture-blue;
+        background-image: url("../images/minus.svg");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: center center;
+        content: '';
+    }
+}
+// .button2,.button3,.button4,.button5,.button6:hover.button2::before,.button3::before,.button4::before,.button5::before,.button6::before {
+//     background-color: $rapture-blue;
+// }
+@media only screen and (max-width:1150px) {
+    .card2, .card3, .card4, .card5, .card6 {
+        max-width: 280px;
+    }
+}
+@media only screen and (max-width:985px) {
+    .card6 {
+        height: 253px;
+    }
+}
+@media only screen and (max-width:950px) {
+    .card2, .card4 {
+        margin-right: 0;
+    }
+    .card3 {
+        margin-right: 11px;
+    }
+    .card4 {
+        margin-bottom: 76px;
+    }
+    .card5 {
+        margin-right: 11px;
+    }
+}
+@media only screen and (max-width:620px) {
+    .card2, .card3, .card4, .card5, .card6 {
+        max-width: 327px;
+    }
+    .card2, .card3, .card4, .card5 {
+        margin-bottom: 52px;
+    }
+    .card3, .card5 {
+        margin-right: 0;
+    }
+    .card5 {
+        margin-bottom: 52px;
+    }
+}

@@ -1,5 +1,4 @@
 .header {
-    height: 100%;
     padding: 73px 0 130px;
     background-color: $header-intro-bgc;
 }
@@ -102,7 +101,10 @@
         display: block;
     }
     .menu {
-        display: none;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        display: flex;
         margin-left: 0;
     }
     .menu--open {

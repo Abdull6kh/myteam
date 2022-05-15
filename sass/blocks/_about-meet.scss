@@ -1,0 +1,166 @@
+.meet {
+    padding: 140px 0;
+    background-image: url("../images/bgi8.svg"), url("../images/bgi4.svg");
+    background-repeat: no-repeat;
+    background-size: 200px 200px, 147px 100px;
+    background-position: calc(50% - 760px) top, calc(50% + 690px) bottom;
+    background-color: $about-meet-bgc;
+}
+.meet__title {
+    margin-top: 0;
+    margin-bottom: 64px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: $main-text-color;
+}
+.meet__list {
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+}
+.meet__item {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    margin-bottom: 76px;
+    padding: 32px 0 56px;
+    background-color: $manage-bgc;
+    // &:hover {
+    //     background-color: $footer-bgc;
+    // }
+}
+.delivery__name {
+    &--about {
+        margin-top: 16px;
+    }
+}
+.meet__text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.delivery__text {
+    &--about {
+        width: 100%;
+        max-width: 254px;
+        margin-top: 8px;
+    }
+}
+.card-div {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.meet__button {
+    padding: 0;
+    border: none;
+    &::before {
+        position: absolute;
+        bottom: -28px;
+        left: calc(50% - 28px);
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: $second-text-color;
+        background-image: url("../images/plus.svg");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: center center;
+        content: '';
+    }
+    &:hover&::before {
+        background-color: $rapture-blue;
+    }
+}
+.button--open {
+    &::before {
+        position: absolute;
+        bottom: -28px;
+        left: calc(50% - 28px);
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: $rapture-blue;
+        background-image: url("../images/minus.svg");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: center center;
+        content: '';
+    }
+}
+@media only screen and (max-width:1440px)  {
+    .meet {
+        background-image: url("../images/bgi8.2.svg"), url("../images/bgi4.svg");
+        background-repeat: no-repeat;
+        background-size: 100px 200px, 147px 100px;
+        background-position: left top, right bottom;
+        background-color: $about-meet-bgc;
+    }
+}
+@media only screen and (max-width:1150px) {
+    .meet__list {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .meet__item {
+        max-width: 280px;
+    }
+}
+@media only screen and (max-width:950px) {
+    .meet {
+        padding: 100px 0 128px;
+    }
+    .meet__title {
+        margin-bottom: 48px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .meet__list {
+        width: 100%;
+        max-width: 571px;
+        margin: 0 auto;
+    }
+    .meet__item {
+        margin-right: 11px;
+    }
+}
+@media only screen and (max-width:670px) {
+    .meet__title {
+        margin-bottom: 64px;
+    }
+}
+@media only screen and (max-width:620px) {
+    .meet {
+        padding: 88px 0 116px;
+        background-image: url("../images/bgi8-m.svg"), url("../images/bgi4.svg");
+        background-size: 100px 100px, 147px 100px;
+    }
+    .meet__title {
+        margin-bottom: 48px;
+    }
+    .meet__list {
+        width: 100%;
+        max-width: 327px;
+        margin: 0 auto;
+    }
+    .meet__item {
+        max-width: 327px;
+        margin-right: 0;
+        margin-bottom: 52px;
+    }
+}
