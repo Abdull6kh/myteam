@@ -127,19 +127,21 @@
 }
 @media only screen and (max-width:885px) {
     .manage {
-        padding: 100px 0 100px 98px;
+        padding: 100px 0 100px 0;
         background-image: url("../images/bgi3.2.svg");
         background-size: 100px 244px;
-        background-position: /*calc(50% + 440px)*/right top;
+        background-position: right top;
     }
     .manage__inner {
+        width: 100%;
+        max-width: 573px;
         display: flex;
+        margin: 0 auto;
         flex-direction: column;
     }
     .manage__left {
         max-width: 445px;
         margin-bottom: 64px;
-        padding-right: 100px;
     }
     .line {
         &--red {
@@ -171,18 +173,18 @@
         line-height: 25px;
     }
 }
-@media only screen and (max-width:640px) {
+@media only screen and (max-width:600px) {
     .manage__item {
         max-width: 478px;
 
         &::before {
-            left: calc(50% - 290px);
+            left: calc(50% - 315px);
         }
         &:nth-child(2):before {
-            left: calc(50% - 290px);
+            left: calc(50% - 315px);
         }
         &:nth-child(3):before {
-            left: calc(50% - 290px);
+            left: calc(50% - 315px);
         }
     }
 }
@@ -195,6 +197,7 @@
     }
     .manage__left {
         margin-bottom: 145px;
+        padding-right: 100px;
     }
     .manage__right {
         padding: 0;

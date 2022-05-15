@@ -1,0 +1,9 @@
+.hero {
+    background-color: $header-intro-bgc;
+}
+.intro-right {
+    &--about {
+        width: 100%;
+        max-width: 730px;
+    }
+}

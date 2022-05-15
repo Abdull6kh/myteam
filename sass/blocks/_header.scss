@@ -1,9 +1,9 @@
 .header {
     height: 100%;
-    padding: 77px 0 133px;
+    padding: 73px 0 130px;
     background-color: $header-intro-bgc;
 }
-.header__inner {
+.team-main {
     display: flex;
     align-items: center;
 }
@@ -78,7 +78,7 @@
 }
 @include max-width(768px) {
     .header {
-        padding: 64px 0 112px;
+        padding: 64px 40px 112px;
     }
     .site-logo {
         width: 128px;
@@ -88,7 +88,7 @@
         margin-left: 48px;
     }
 }
-@media only screen and (max-width:576px) {
+@media only screen and (max-width:610px) {
     .header {
         position: relative;
         padding: 48px 0 80px;
@@ -98,6 +98,7 @@
         height: 32px;
     }
     .header__burger-btn {
+        z-index: 3;
         display: block;
     }
     .menu {
@@ -128,23 +129,10 @@
         margin-left: 0;
         margin-top: 40px;
     }
-    .contact-link {
-        // display: none;
-    }
     .contact-item {
         display: block;
         margin-top: 40px;
         margin-right: auto;
         margin-left: 0;
     }
-    // .contact--open {
-    //     position: absolute;
-    //     top: 135px;
-    //     right: 20px;    
-    //     z-index: 2;
-    //     display: block;
-    //     width: 153px;
-    //     margin: 0 auto;
-    //     background-color: #012F34;
-    // }
 }
