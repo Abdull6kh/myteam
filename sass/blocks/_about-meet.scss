@@ -37,6 +37,9 @@
     &:hover {
         background-color: $footer-bgc;
     }
+    &:hover > .meet__button::before {
+        background-color: $rapture-blue;
+    }
 }
 .delivery-name {
     &-about {
@@ -81,9 +84,9 @@
         background-position: center center;
         content: '';
     }
-    .meet__button:hover.meet__button::before {
-        background-color: $rapture-blue;
-    }
+    // .meet__button::before :hover {
+    //     background-color: $rapture-blue;
+    // }
 }
 .button--open {
     &::before {
