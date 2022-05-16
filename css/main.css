@@ -1135,10 +1135,6 @@ img {
   background-color: #012F34;
 }
 
-.meet__item:hover {
-  background-color: #002529;
-}
-
 .meet__item:hover > .meet__button::before {
   background-color: #79C8C7;
 }
@@ -1652,10 +1648,6 @@ img {
   background-color: #012F34;
 }
 
-.card2:hover {
-  background-color: #002529;
-}
-
 .card2:hover > .button2::before {
   background-color: #79C8C7;
 }
@@ -1677,10 +1669,6 @@ img {
   margin-bottom: 76px;
   padding: 32px 0 56px;
   background-color: #012F34;
-}
-
-.card3:hover {
-  background-color: #002529;
 }
 
 .card3:hover > .button3::before {
@@ -1706,10 +1694,6 @@ img {
   background-color: #012F34;
 }
 
-.card4:hover {
-  background-color: #002529;
-}
-
 .card4:hover > .button4::before {
   background-color: #79C8C7;
 }
@@ -1731,10 +1715,6 @@ img {
   margin-right: 30px;
   padding: 32px 0 56px;
   background-color: #012F34;
-}
-
-.card5:hover {
-  background-color: #002529;
 }
 
 .card5:hover > .button5::before {
