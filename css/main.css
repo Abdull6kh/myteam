@@ -761,7 +761,6 @@ img {
 .intro-right--about {
   width: 100%;
   max-width: 700px;
-  padding-right: 100px;
 }
 
 @media only screen and (max-width: 1440px) {
